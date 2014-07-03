@@ -1,4 +1,31 @@
+<a id='work' class="anchor"></a>
 <div ng-include="'partials/navbar'"></div>
+
+<div class='section-container text-center'>
+  <span class="title"><h1>Work</h1></span>
+  <span><h4>fullstack developer</h4></span>
+  <hr>
+  <div class="card" ng-repeat="project in projects">
+    {{project.title}}
+    <img ng-src={{project.imageURL}}>
+  </div>
+
+</div> <!-- work-container -->
+<a id='about' class="anchor"></a>
+<div class='section-container text-center'>
+  <span class="title"><h1>About Me</h1></span>
+  <hr>
+  <div class="about">
+     <img src="https://s3.amazonaws.com/portfolio_tlerias/headshot.png" alt="profile picture" >
+    <p>As embarrassing as it is to admit, my passion for technology and arts stems from my addiction to Neopets in middle school. I would go on Neopets because they would let users edit the HTML on their homepages. This is my earliest involvement with HTML, CSS and Adobe Photoshop. I used my Neopets homepage as an expression of myself back then, and I still use HTML, CSS and Adobe Photoshop (with the addition of several other programs and languages) to express myself today.</p>
+
+    <p>I was born and raised on Long Island, NY. I followed the mountains and my love for snowboarding to Boulder, CO. Having attended school at University of Colorado for four years helped me recognize my adoration for camping, hiking and yoga. I usually have my co-pilot, Lola, by my side - she's living proof that a dog is a woman's best friend. After graduation from the University of Colorado in May 2012, I immediately went into a job at a software startup where I put their Support Department into place and transitioned into a Jr. Product Manager position. Having managed developers, I came to the realization that I was managing the people whom I admired and aspired to be so I recently switched gears and moved back to New York to attend Fullstack Academy in NYC. Now I'm very proud to say that I am pursuing my dreams and passion for software development.
+    </p>
+  </div>
+</div> <!-- about-container -->
+
+
+
 
 
 

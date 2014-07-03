@@ -4,7 +4,8 @@ angular.module('taraleriasCom40App', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'akoenig.deckgrid'
 ])
   .config(function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
