@@ -4,6 +4,8 @@ $font-color: #000;
 $background-color: #fff;
 $link-color: purple;
 $hover-link-color:#000;
+$code:'Source Code Pro';
+$off-white:#999;
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 
@@ -24,7 +26,7 @@ body {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
+.navbar-default,
 .marketing,
 .footer {
     padding-left: 15px;
@@ -32,7 +34,7 @@ body {
 }
 
 /* Custom page header */
-.header {
+.navbar-default {
     position:fixed;
     top:0;
     left:0;
@@ -53,19 +55,23 @@ body {
 }
 
 /* Make the masthead heading the same height as the navigation */
-.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding: 0 0 19px 20px;
-    //font-weight: 700;
-    color:$link-color;
+// .header h3 {
+//     margin-top: 0;
+//     margin-bottom: 0;
+//     line-height: 40px;
+//     padding: 0 0 19px 20px;
+//     //font-weight: 700;
+//     color:$link-color;
+// }
+
+a.navbar-brand{
+  color: $link-color;
 }
 
 .card {
   margin: 25px 5px 0 5px;
   padding: 20px;
-  height:auto;
+  height:300px;
   width:auto;
   max-width:300px;
   box-shadow: 0 2px 2px rgba(0,0,0,.05),0 1px 0 rgba(0,0,0,.05);
@@ -86,10 +92,27 @@ body {
   }
 }
 .section-container{
-  height:800px;
+  min-height:800px;
   margin:50px 0;
-  &:nth-child(2){
+}
+
+.fullview{
+  text-align: center;
+  img{
+    display: block;
+    max-width:200px;
+    width: auto;
+    height: auto;
+    margin: 20px auto;
   }
+}
+
+.card-description{
+  //background-color:$off-white;
+  margin-top:25px;
+  display:block;
+  width:100%;
+  height:100%;
 }
 .about {
   img{
@@ -106,6 +129,14 @@ body {
   color:$link-color;
 }
 
+.bold{
+  font-weight:700;
+}
+
+.code{
+  font-family: $code;
+}
+
 a.anchor{
   display: block;
   position: relative;
@@ -115,6 +146,22 @@ a.anchor{
 a.pointer{
   cursor:pointer;
 }
+
+a.navbar-toggle{
+  text-decoration: none;
+  border:none;
+  color:#777;
+}
+
+a.project{
+  text-decoration: none;
+}
+
+// .hover-options{
+//   padding:10px;
+//   max-height:200px;
+// }
+
 
 /* Deck Grid Styling */
 .deckgrid[deckgrid]::before {
@@ -169,6 +216,17 @@ a.pointer{
     margin-top: 28px;
 }
 
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 640px) {
+  .brand{
+    display:inline-block;
+  }
+
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {

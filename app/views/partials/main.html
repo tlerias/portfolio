@@ -2,18 +2,27 @@
 <div ng-include="'partials/navbar'"></div>
 
 <div class='section-container text-center'>
-  <span class="title"><h1>Work</h1></span>
+  <span class="title"><h1>WORK</h1></span>
   <span><h4>fullstack developer</h4></span>
   <hr>
-  <div class="card" ng-repeat="project in projects">
-    {{project.title}}
+  <div class="card" ng-repeat="project in projects" ng-mouseover="hover(project)" ng-mouseout="hover(project)">
+    <a class="project" href={{project.blogURL}} target="_blank">
     <img ng-src={{project.imageURL}}>
+    <!-- <div class="hover-options" ng-show="project.showHover">now you see me</div> -->
+    <hr>
+    <div class="card-description">
+      <p><span class="title bold">{{project.title}}</span></p>
+      <p>{{project.pitch}}</p>
+      <p>- {{project.tag}} -</p>
+    </div>
+  </a>
   </div>
 
 </div> <!-- work-container -->
 <a id='about' class="anchor"></a>
 <div class='section-container text-center'>
-  <span class="title"><h1>About Me</h1></span>
+  <span class="title"><h1>ABOUT ME</h1></span>
+  <span><h4>I eat callback spagetti for dinner.</h4></span>
   <hr>
   <div class="about">
      <img src="https://s3.amazonaws.com/portfolio_tlerias/headshot.png" alt="profile picture" >
