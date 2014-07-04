@@ -6,7 +6,7 @@
   <span><h4>fullstack developer</h4></span>
   <hr>
   <div class="card" ng-repeat="project in projects" ng-mouseover="hover(project)" ng-mouseout="hover(project)">
-    <a class="project" href={{project.blogURL}} target="_blank">
+    <a class="project" ng-href={{project.blogURL}} target="_blank">
     <img ng-src={{project.imageURL}}>
     <!-- <div class="hover-options" ng-show="project.showHover">now you see me</div> -->
     <hr>
