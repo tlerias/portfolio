@@ -27,6 +27,7 @@ angular.module('taraleriasCom40App')
         title: "InvestorSearch",
         pitch: "Collaborated with DreamIt Ventures to help startups find investors",
         description: "Integrated with the AngelList API to gather information about investors. Users can search specific markets and companies to generate a list of investors ranked by relevance to their search. Users can also save investors to an exportable list.",
+        blogURL: 'http://hackerisms.com/2014/07/04/fullstack-final-project-investorsearch/',
         imageURL: 'https://s3.amazonaws.com/portfolio_tlerias/investor_search_main.png',
         liveURL: 'http://investorfinder.herokuapp.com',
         tag:'Fullstack Academy',
