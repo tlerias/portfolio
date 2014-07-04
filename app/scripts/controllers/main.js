@@ -41,7 +41,6 @@ angular.module('taraleriasCom40App')
 
     $rootScope.scrollToAnchor = function(aid){
       var aTag = $("a[id='"+ aid +"']");
-      console.log(aTag)
       $('html,body').animate({scrollTop: aTag.offset().top},1000);
     }
   });
